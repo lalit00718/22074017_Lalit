@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div>
+    <h2>List of Shortened URLs</h2>
+    <ul>
+        {% for url in urls %}
+                <p><a href="{{ url.hash }}" target=_blank>{{ url.hash }}</a> - {{ url.original_url }}</p>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

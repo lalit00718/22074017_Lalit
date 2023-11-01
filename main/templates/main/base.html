@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="{% static 'img/4846304.png' %}" >
+  <title>Link Shortener</title>
+</head>
+<style>
+    .url {
+        text-align: center;
+    }
+</style>
+</body>
+<div class="url">
+  {% block content %}
+  {% endblock %}
+  <a href="/">Home</a>
+</div>
+</body>
